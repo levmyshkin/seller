@@ -1,0 +1,15 @@
+diff --git a/js/quickedit.js b/js/quickedit.js
+index 563f9a3..a95315e 100644
+--- a/js/quickedit.js
++++ b/js/quickedit.js
+@@ -267,6 +267,10 @@
+         .find(entityElementSelector)
+         .addBack(entityElementSelector);
+     }
++    // Patch for js error: Uncaught TypeError: Cannot read property 'getAttribute' of undefined.
++    if (typeof entityElement.get(0) === 'undefined') {
++        return;
++    }
+     var entityInstanceID = entityElement
+       .get(0)
+       .getAttribute('data-quickedit-entity-instance-id');
