@@ -1,0 +1,63 @@
+diff --git a/src/Plugin/Field/FieldFormatter/ColorFieldFormatterCss.php b/src/Plugin/Field/FieldFormatter/ColorFieldFormatterCss.php
+index 053191a..585b192 100644
+--- a/src/Plugin/Field/FieldFormatter/ColorFieldFormatterCss.php
++++ b/src/Plugin/Field/FieldFormatter/ColorFieldFormatterCss.php
+@@ -7,6 +7,7 @@
+
+ namespace Drupal\color_field\Plugin\Field\FieldFormatter;
+
++use Drupal\color_field\Plugin\Field\FieldType\ColorFieldType;
+ use Drupal\Core\Field\FormatterBase;
+ use Drupal\Core\Field\FieldItemListInterface;
+ use Drupal\Core\Form\FormStateInterface;
+@@ -141,7 +142,7 @@ class ColorFieldFormatterCss extends FormatterBase {
+   /**
+    * {@inheritdoc}
+    */
+-  protected function viewValue(FieldItemInterface $item) {
++  protected function viewValue(ColorFieldType $item) {
+     $opacity = $this->getFieldSetting('opacity');
+     $settings = $this->getSettings();
+
+diff --git a/src/Plugin/Field/FieldFormatter/ColorFieldFormatterSwatch.php b/src/Plugin/Field/FieldFormatter/ColorFieldFormatterSwatch.php
+index c2ea210..7b0b561 100644
+--- a/src/Plugin/Field/FieldFormatter/ColorFieldFormatterSwatch.php
++++ b/src/Plugin/Field/FieldFormatter/ColorFieldFormatterSwatch.php
+@@ -7,6 +7,7 @@
+
+ namespace Drupal\color_field\Plugin\Field\FieldFormatter;
+
++use Drupal\color_field\Plugin\Field\FieldType\ColorFieldType;
+ use Drupal\Core\Field\FormatterBase;
+ use Drupal\Core\Field\FieldItemInterface;
+ use Drupal\Core\Field\FieldItemListInterface;
+@@ -147,7 +148,7 @@ class ColorFieldFormatterSwatch extends FormatterBase {
+   /**
+    * {@inheritdoc}
+    */
+-  protected function viewValue(FieldItemInterface $item) {
++  protected function viewValue(ColorFieldType $item) {
+     $opacity = $this->getFieldSetting('opacity');
+     $settings = $this->getSettings();
+
+diff --git a/src/Plugin/Field/FieldFormatter/ColorFieldFormatterText.php b/src/Plugin/Field/FieldFormatter/ColorFieldFormatterText.php
+index eba6199..b6ef971 100644
+--- a/src/Plugin/Field/FieldFormatter/ColorFieldFormatterText.php
++++ b/src/Plugin/Field/FieldFormatter/ColorFieldFormatterText.php
+@@ -7,7 +7,7 @@
+
+ namespace Drupal\color_field\Plugin\Field\FieldFormatter;
+
+-use Drupal\Core\Field\FieldItemInterface;
++use Drupal\color_field\Plugin\Field\FieldType\ColorFieldType;
+ use Drupal\Core\Field\FieldItemListInterface;
+ use Drupal\Core\Field\FormatterBase;
+ use Drupal\Core\Form\FormStateInterface;
+@@ -114,7 +114,7 @@ class ColorFieldFormatterText extends FormatterBase {
+   /**
+    * {@inheritdoc}
+    */
+-  protected function viewValue(FieldItemInterface $item) {
++  protected function viewValue(ColorFieldType $item) {
+     $opacity = $this->getFieldSetting('opacity');
+     $settings = $this->getSettings();

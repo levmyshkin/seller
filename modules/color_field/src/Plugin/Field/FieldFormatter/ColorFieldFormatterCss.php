@@ -7,6 +7,7 @@
 
 namespace Drupal\color_field\Plugin\Field\FieldFormatter;
 
+use Drupal\color_field\Plugin\Field\FieldType\ColorFieldType;
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
@@ -141,7 +142,7 @@ class ColorFieldFormatterCss extends FormatterBase {
   /**
    * {@inheritdoc}
    */
-  protected function viewValue(FieldItemInterface $item) {
+  protected function viewValue(ColorFieldType $item) {
     $opacity = $this->getFieldSetting('opacity');
     $settings = $this->getSettings();
 
