@@ -375,6 +375,10 @@
       var $lowestCommonParent = $(entityElementSelector).parents().has(fieldElement).first();
       entityElement = $lowestCommonParent.find(entityElementSelector);
     }
+    // Patch for js error: Uncaught TypeError: Cannot read property 'getAttribute' of undefined.
+    if (typeof entityElement.get(0) === 'undefined') {
+        return;
+    }
     var entityInstanceID = entityElement
       .get(0)
       .getAttribute('data-quickedit-entity-instance-id');
