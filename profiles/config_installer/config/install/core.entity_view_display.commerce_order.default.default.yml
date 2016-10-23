@@ -1,0 +1,82 @@
+uuid: 9526fc28-2dcc-47d0-9c99-c658c995d0d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.field.commerce_order.default.order_items
+  module:
+    - commerce_price
+    - options
+    - user
+_core:
+  default_config_hash: KXnPDOyTHnXkFWgpqJJoJ008SdwmOQpehSRO3YPBtao
+id: commerce_order.default.default
+targetEntityType: commerce_order
+bundle: default
+mode: default
+content:
+  completed:
+    label: above
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  ip_address:
+    label: above
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  mail:
+    label: above
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  order_items:
+    type: entity_reference_entity_view
+    weight: 0
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    label: hidden
+  placed:
+    label: above
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  state:
+    label: hidden
+    type: list_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  total_price:
+    type: commerce_price_default
+    weight: 1
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
+    label: above
+  uid:
+    label: above
+    type: author
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  billing_profile: true
+  order_number: true
+  store_id: true

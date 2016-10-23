@@ -763,4 +763,5 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
+$config_directories['active'] = 'sites/default/files/config_PBjIm0z9Sh78_TEJsrBBwx9JWhqsFLDhuzQTnNKHsiWLtvTLIcRUuqQupKMcOnJGmfyfyg3hHg/active';
 $config_directories['sync'] = 'sites/default/files/config_PBjIm0z9Sh78_TEJsrBBwx9JWhqsFLDhuzQTnNKHsiWLtvTLIcRUuqQupKMcOnJGmfyfyg3hHg/sync';
