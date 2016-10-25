@@ -1,0 +1,11 @@
+uuid: 5c658de7-2377-42d5-91cb-b81b4c2b75aa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tk1JAFrsrTYNzh4ZowyiuqYyTmcRJCkj2tDR34BjkNA
+label: Default
+id: default
+workflow: order_default
+refresh_mode: always
+refresh_frequency: 30

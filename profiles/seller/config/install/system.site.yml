@@ -1,0 +1,14 @@
+uuid: 8d09d0c4-5cf9-480d-bb5d-bee3d152d1da
+name: Commerce
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
