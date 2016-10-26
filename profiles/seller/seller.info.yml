@@ -21,11 +21,13 @@ dependencies:
   - block_content
   - breakpoint
   - color
-  - color_field
   - config
   - comment
   - contextual
   - contact
+  - serialization
+  - rest
+  - hal
   - default_content
   - quickedit
   - help
@@ -44,6 +46,22 @@ dependencies:
   - views_ui
   - editor
   - ckeditor
+  - entity
+  - profile
+  - state_machine
+  - imagefield_zoom
+  - layout_plugin
+  - inline_entity_form
+  - color_field
+  - datetime
+  - entity_reference_revisions
+  - commerce
+  - commerce_cart
+  - commerce_checkout
+  - commerce_order
+  - commerce_price
+  - commerce_product
+  - commerce_store
 
 default_content:
   node:
