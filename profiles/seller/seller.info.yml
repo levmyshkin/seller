@@ -26,6 +26,7 @@ dependencies:
   - comment
   - contextual
   - contact
+  - default_content
   - quickedit
   - help
   - image
@@ -43,3 +44,7 @@ dependencies:
   - views_ui
   - editor
   - ckeditor
+
+default_content:
+  node:
+    - f69a0267-b84c-4672-85ef-fbef57ea87ef

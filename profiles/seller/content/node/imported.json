@@ -1,0 +1,144 @@
+{
+  "_links": {
+    "self": {
+      "href": "http:\/\/default\/node\/1?_format=hal_json"
+    },
+    "type": {
+      "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+    },
+    "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+      {
+        "href": "http:\/\/default\/user\/1?_format=hal_json",
+        "lang": "en"
+      }
+    ],
+    "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+      {
+        "href": "http:\/\/default\/user\/1?_format=hal_json"
+      }
+    ]
+  },
+  "nid": [
+    {
+      "value": "1"
+    }
+  ],
+  "uuid": [
+    {
+      "value": "f69a0267-b84c-4672-85ef-fbef57ea87ef"
+    }
+  ],
+  "vid": [
+    {
+      "value": "1"
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en",
+      "lang": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "page"
+    }
+  ],
+  "title": [
+    {
+      "value": "About Us",
+      "lang": "en"
+    }
+  ],
+  "_embedded": {
+    "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+      {
+        "_links": {
+          "self": {
+            "href": "http:\/\/default\/user\/1?_format=hal_json"
+          },
+          "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+          }
+        },
+        "uuid": [
+          {
+            "value": "a4856335-4dbe-422f-96e7-6ea363f181f9"
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+      {
+        "_links": {
+          "self": {
+            "href": "http:\/\/default\/user\/1?_format=hal_json"
+          },
+          "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+          }
+        },
+        "uuid": [
+          {
+            "value": "a4856335-4dbe-422f-96e7-6ea363f181f9"
+          }
+        ]
+      }
+    ]
+  },
+  "status": [
+    {
+      "value": "1",
+      "lang": "en"
+    }
+  ],
+  "created": [
+    {
+      "value": "1477473247",
+      "lang": "en"
+    }
+  ],
+  "changed": [
+    {
+      "value": "1477473359",
+      "lang": "en"
+    }
+  ],
+  "promote": [
+    {
+      "value": "0"
+    }
+  ],
+  "sticky": [
+    {
+      "value": "0",
+      "lang": "en"
+    }
+  ],
+  "revision_timestamp": [
+    {
+      "value": "1477473359"
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": "1",
+      "lang": "en"
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": "1",
+      "lang": "en"
+    }
+  ],
+  "body": [
+    {
+      "value": "<p>Info<\/p>\r\n",
+      "format": "basic_html",
+      "summary": "",
+      "lang": "en"
+    }
+  ]
+}
