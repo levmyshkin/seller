@@ -66,3 +66,5 @@ dependencies:
 default_content:
   node:
     - f69a0267-b84c-4672-85ef-fbef57ea87ef
+  commerce_product:
+    - d4e7fc56-a594-4abe-a236-3e2c328ffdff
